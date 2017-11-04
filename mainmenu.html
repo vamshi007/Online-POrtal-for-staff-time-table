@@ -1,0 +1,96 @@
+<html>
+<head>
+	<title>
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</title>
+
+
+   <style type="text/css">
+   .index
+   {
+            position:fixed;
+            width:100%;
+            height:100px;
+            top:0;
+            left:0;     
+            background-color:#283593;  
+            -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+   }
+   .log
+      {
+         position:absolute;
+         left:10%;
+         top:50%;
+            
+      }
+      .but
+      {
+         background-color:#44c767;
+             -moz-border-radius:28px;
+         -webkit-border-radius:28px;
+         border-radius:28px;
+         border:1px solid #18ab29;
+          display:inline-block;
+         cursor:pointer;
+            color:#ffffff;
+         font-family:Arial;
+                  font-size:17px;
+            padding:16px 31px;
+            text-decoration:none;
+         text-shadow:0px 1px 0px #2f6627;
+      }
+      .col
+      {
+         color: white;
+      }
+      .bgimg
+      {
+         background-image: url("1.jpg");
+
+      }
+
+
+
+   </style>
+
+      <script type="text/javascript">
+         
+            function Insert() {
+               window.location="insertdata.html";
+            }
+            function Update() {
+               window.location="updatee.html";
+            }
+            function Classes() {
+               window.location="classes.html";
+            }
+            function logout() {
+               window.location="logout.php";
+            }
+            function Id() {
+               window.location="staffid.php";
+            }
+            function Op() {
+               window.location="mainmenu2.html";
+            }
+
+         
+      </script>
+
+</head>
+<body bgcolor="#e0e0e0" class="bgimg">
+<div class="index"></br>
+   <h1 > <b class="col">Staff Time Table </b></h1>
+</div>	
+<div class="log">
+<form>
+<input type="button" value="Insert Data" class="but" onclick="Insert();">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" value="Update Data" class="but" onclick="Update()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button"  value="Staff Classes" class="but" onclick="Classes()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button"  value="Staff id" class="but" onclick="Id()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button"  value="New staff" class="but" onclick="Op()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button"  value="Logout" class="but" onclick="logout()">
+</form>
+</div>
+</body>
+</html>
